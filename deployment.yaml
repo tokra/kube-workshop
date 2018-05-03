@@ -1,0 +1,22 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: flask-demo-tokra
+  labels:
+    app: flask-demo-tokra
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: flask-demo-tokra
+  template:
+    metadata:
+      labels:
+        app: flask-demo-tokra
+    spec:
+      containers:
+        - name: flask-demo-tokra
+          image: 'exponea/flask-demo:1.0'
+          command:
+            - python
+            - runner.py

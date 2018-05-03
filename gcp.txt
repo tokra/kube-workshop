@@ -1,0 +1,31 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURERENDQWZTZ0F3SUJBZ0lSQVBoMlhhdTlldzNsKzR5MGpwd0xyUU13RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa05HUmxNVFV3TnpRdFpqbGxOQzAwTXpRMkxXSXhNekl0WldWaU5HUmxPVGszTnpjdwpNQjRYRFRFNE1EVXdNekV6TURVeU1sb1hEVEl6TURVd01qRTBNRFV5TWxvd0x6RXRNQ3NHQTFVRUF4TWtOR1JsCk1UVXdOelF0WmpsbE5DMDBNelEyTFdJeE16SXRaV1ZpTkdSbE9UazNOemN3TUlJQklqQU5CZ2txaGtpRzl3MEIKQVFFRkFBT0NBUThBTUlJQkNnS0NBUUVBbS8rVTJKSFV1NmxDcW4xOVd1M0ZJQ0tmSG9pWUoweWNFYXUxQ2JnUQpLeUl0TjlnM3QyYUhTaUd3b1grcVIrMDRsS1p2bU82WHVpOS9wd3hYdUdYRjN3czlsRG9MNlhubDZNYUdvZ01BClJvd29FZFdYV0VLa3JkajRtYzJwc0lUZDlwMkllVUYvaHJ3ODNsVmRVYUdTVDB4cHRETVliZENoWDQ5bTYrdEwKejRwNFZTSkJUelRhNDlPdzI5aCttWUVIU2VzUUtlQ0JBT2lzU0JTSXplcEF3YXducjhrZmNQcnhFM0YxNlhMLwpVNjZkMnkxSGdTQTZCUHQzR01tNnhCMVhuamFnNDVnWHJ5UGUxY3BINklUMy94WnJmYlZmOUZxTExsYXI2RXEwClF2Uk4walRPaGNOSUpSMkhEbFFNbWJvTVQ4Z1BrSTBZalk3bkU5cDhaUVhLRVFJREFRQUJveU13SVRBT0JnTlYKSFE4QkFmOEVCQU1DQWdRd0R3WURWUjBUQVFIL0JBVXdBd0VCL3pBTkJna3Foa2lHOXcwQkFRc0ZBQU9DQVFFQQpYUWdtMjdXV2p3VmQvSFRzbnRCbTJZK1ZxUGxTZ1ZqZFhseVFabUhDbmJpS0F1bDE1Z3YrakY1MGNxUEZhaldqCklHOU9SL2YrTW8wR0owRmZ4dUNXU1BWbktGV2xaa2w3SlllVTAxdkRtOGxrczgwV1lqRmF3L21GN3pwamtHbkYKL1FPUjFLVUR6eWZpcWNiaHdETFRZNlQ4UVhOM3VvL2hsQmVqeGx6bUlwZzFXUENSeUNWMnlNYVY3c0pWcDU5bgo4NXl5Y2U0MnIvM1JHYXM2bXcrQ2dzcGhGaFhrZlIwUDVJMU8wVU1WdU82a0N1dCtkdTJzMDUwYWFQdU01VjgrClFiaG9zSWVFdXoyZWVmbDVkY0xtRXlSSEFCc2lKUFN6TVlzcDNRdVJpT1FYWml3NEhZTTNHbXc5d2ZRdjNkYmwKaW0yNUtPR0VmQlRqTVdlMDdmVXpZdz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+    server: https://35.205.19.147
+  name: gke_kube-workshop-203011_europe-west1-c_kube-workshop
+contexts:
+- context:
+    cluster: gke_kube-workshop-203011_europe-west1-c_kube-workshop
+    namespace: <YOUR_NICKNAME>
+    user: gke_kube-workshop-203011_europe-west1-c_kube-workshop
+  name: <YOUR_NICKNAME>
+- context:
+    cluster: gke_kube-workshop-203011_europe-west1-c_kube-workshop
+    user: gke_kube-workshop-203011_europe-west1-c_kube-workshop
+  name: gke_kube-workshop-203011_europe-west1-c_kube-workshop
+current-context: gke_kube-workshop-203011_europe-west1-c_kube-workshop
+kind: Config
+preferences: {}
+users:
+- name: gke_kube-workshop-203011_europe-west1-c_kube-workshop
+  user:
+    auth-provider:
+      config:
+        access-token: ya29.GluwBSZksLjdoJh5Ji0rnL-QVqrnfpdYeBOjmWozdjg541m16F3DG9dNkUfswMswLVmO5K7whI7g6OhoHSkajnlsKgr8-_dtqFL-Y-xDkAm2ij_32nZZu7CORM4T
+        cmd-args: config config-helper --format=json
+        cmd-path: /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud
+        expiry: 2018-05-03T17:45:07Z
+        expiry-key: '{.credential.token_expiry}'
+        token-key: '{.credential.access_token}'
+      name: gcp
